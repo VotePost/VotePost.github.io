@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Registration</title>
+    <style>
+        body {
+            background-color: rgb(118, 67, 151);
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        .container {
+            background-color: rgb(118, 67, 151);  /*Keeps the container same color*/
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+            background-color: white;
+            color: black;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .input-group input[type="text"] {
+            margin-right: 10px;
+        }
+
+        .bottom-logo { /* Style for the bottom logo */
+            max-width: 150px; /* Adjust size as needed */
+            margin-top: 20px; /* Add some space above the logo */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="quiz project logo.png" alt="Your Logo" class="logo">
+        <label for="classCode">Class Code:</label>
+        <div class="input-group">
+            <input type="text" id="classCode" name="classCode" required>
+        </div>
+
+        <label for="name">Name:</label>
+        <div class="input-group">
+            <input type="text" id="name" name="name" required>
+            <button>Go</button>
+        </div>
+
+        <img src="groupname.png" alt="Bottom Logo" class="bottom-logo"> </div>
+</body>
+</html>
