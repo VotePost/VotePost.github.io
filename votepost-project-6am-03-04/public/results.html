@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="resultsstyle.css">
+</head>
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+    <div class="container">
+        <img src="VOTEPOST.PNG" alt="Your Logo" class="logo">
+        <img src="groupname.png" alt="Bottom Logo" class="bottom-logo">
+    </div>
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+<script>
+const xValues = ["A", "B", "C"];
+const yValues = [55, 49, 44];
+const barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#1e7145"
+];
+
+new Chart("myChart", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Your Results Here"
+    }
+  }
+});
+</script>
+    <script src="results_script.js">
+    
+    </script> </body>
+    </html>
