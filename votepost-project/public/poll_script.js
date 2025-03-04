@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const optionsContainer = document.getElementById('optionsContainer');
     
     const maxOptions = 6;
-    const pollForm = document.getElementById('polllForm');
+    const pollForm = document.getElementById('pollForm');
 
     let optionCounter = 2;
     updateOptionLabels();

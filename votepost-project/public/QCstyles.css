@@ -90,3 +90,11 @@ button:hover {
 .option {
     margin-bottom: 10px; /* Space between options */
 }
+
+
+.bottom-logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+    margin-top: 20px;
+}

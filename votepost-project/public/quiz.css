@@ -46,3 +46,13 @@ body {
     display: block;
     margin: 0 auto 20px;
 }
+
+.poll-title-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 5000px; 
+    max-height: 100px; 
+    width: auto;
+    height: auto;
+    object-fit: contain; 
+}

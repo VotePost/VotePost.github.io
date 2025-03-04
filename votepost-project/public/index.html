@@ -15,12 +15,23 @@
             <input type="text" id="classCode" name="classCode" required>
         </div>
 
-        <button id="goButton">Enter</button>
+        <!-- <a id="goButton" href="#">Enter</a> -->
+        <button id="goButton" onclick="test()">Enter</button>
 
-        <a id="createPollButton" href="pollcreation.html">Create Poll</a>
+        <button id="createPollButton" onclick="create()">Create Poll</button>
         </div>
 
-        
+        <script>
+            function test() {
+                let code = document.getElementById('classCode');
+                let pollId = code.value;
+                window.location.href = `votepage.html?pollId=${pollId}`;
+            }
+
+            function create() {
+                window.location.href = `pollcreation.html`;
+            }
+        </script>
 
         <img src="groupname.png" alt="Bottom Logo" class="bottom-logo">
     </div>

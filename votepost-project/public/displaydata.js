@@ -3,7 +3,10 @@
 const supabaseUrl = 'https://gsbczcgdaatpfewgydca.supabase.co';  //Supabase URL
 const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdzYmN6Y2dkYWF0cGZld2d5ZGNhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDA2MTQwNjMsImV4cCI6MjA1NjE5MDA2M30.E5qu7-RsBBY_br_RhAn74zwEA9wntB4VEJDw67UKAts';  //Supabase anon key
 const supabase = createClient(supabaseUrl, supabaseKey);
-
+alert()
+// get number of votes from poll_responses, get options from polls
+// create bar graph, labels are options and number of votes are values
+// when window is closed, if end=true: delete poll from DB (OPTIONAL.)
 async function fetchData() {
   let { data, error } = await supabase
     .from('your_table')  // Replace with your actual table name

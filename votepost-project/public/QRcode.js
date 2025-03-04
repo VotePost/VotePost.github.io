@@ -2,6 +2,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const pollId = urlParams.get('pollId');
 const code = document.getElementById('qrcode');
+const testButton = document.getElementById('testButton');
+// const end_btn = document.getElementById("end");
 
 // Generate QR code when the page loads
 document.addEventListener('DOMContentLoaded', function() {
@@ -12,14 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// generate QR Code
-// what i had:
-// function generateQRCode(pollId) {
-//     alert('Generating QR code');
-//     const url = `https://jmjones03.github.io/votepage.html?pollId=${pollId}`;
-//     // should it be a different url ?
-//     var qr = new QRCode(document.getElementById("qrcode"), url);
-// }
+// end_btn.addEventListener('click', function() {
+//     const end = true;
+//     window.location.href = `end_results.html?pollId=${pollId}&end=true`;
+// });
+
+testButton.addEventListener('click', function() {
+    window.location.href = `votepage.html?pollId=${pollId}`;
+})
 
 function generateQRCode(pollId) {
     alert('Generating QR code');
@@ -44,16 +46,3 @@ function generateQRCode(pollId) {
     
     qrCode.append(document.getElementById("qrcode"));
 }
-
-// function generateQRCode(pollId) {
-//     alert('Generating QR code');
-//     const url = `https://jmjones03.github.io/votepage.html?pollId=${pollId}`;
-    
-//     // qrcode-generator usage
-//     const qr = qrcode(0, 'L');
-//     qr.addData(url);
-//     qr.make();
-    
-//     // Display the QR code
-//     document.getElementById("qrcode").innerHTML = qr.createImgTag(5);
-// }

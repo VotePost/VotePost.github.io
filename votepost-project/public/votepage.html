@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poll Voting Page</title>
     <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1/dist/umd/supabase.min.js"></script>
 </head>
 <body>
-    <img src="votepost3.png" alt="Poll Header" class="header-image">
-    
+    <img src="votepost3.png" alt="group logo" class="poll-title-image">
+
     <div class="poll-container">
-        <div class="question"></div>
-        <div class="options">
-            <label><span class="option-label">A.</span> <input type="radio" name="option" value="red"> </label>
-            <label><span class="option-label">B.</span> <input type="radio" name="option" value="blue"> </label>
-            <label><span class="option-label">C.</span> <input type="radio" name="option" value="green"> </label>
-            <label><span class="option-label">D.</span> <input type="radio" name="option" value="yellow"> </label>
-        </div>
-        <button class="submit-btn">Submit Vote</button>
+        <h2 class="question">Loading...</h2> <!-- Question will be inserted here -->
+        <div class="options"></div> <!-- Options will be inserted here -->
+        <button id="submit-btn">Submit Vote</button>
     </div>
-    <script type="text/javascript">
-        new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
-    </script>
+
     <script src="votepage_script.js"></script>
-    <img src="groupname.png" alt="company logo" class="bottom-image">
+    <!-- <img src="groupname.png" alt="company logo" class="bottom-image"> -->
+    <img src="groupname.png" alt="Bottom Logo" class="bottom-logo">
 </body>
 </html>
