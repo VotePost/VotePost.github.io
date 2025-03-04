@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (optionsList[1]) {  // Changed from else if to if
             optionsObj.option2 = optionsList[1];
         }
+        // CONT..
     
         const { data, error } = await supabaseClient.from('polls').insert([{ question: premise, ...optionsObj }]).select();
         

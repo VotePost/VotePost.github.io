@@ -8,13 +8,21 @@
 </head>
 <body>
     <img src="votepost3.png" alt="Poll Header" class="header-image">
-
+    
     <div class="poll-container">
-        <h2 class="question">Loading...</h2> <!-- Question will be inserted here -->
-        <div class="options"></div> <!-- Options will be inserted here -->
+        <div class="question"></div>
+        <div class="options">
+            <label><span class="option-label">A.</span> <input type="radio" name="option" value="red"> </label>
+            <label><span class="option-label">B.</span> <input type="radio" name="option" value="blue"> </label>
+            <label><span class="option-label">C.</span> <input type="radio" name="option" value="green"> </label>
+            <label><span class="option-label">D.</span> <input type="radio" name="option" value="yellow"> </label>
+        </div>
         <button class="submit-btn">Submit Vote</button>
     </div>
-
+    <script type="text/javascript">
+        new QRCode(document.getElementById("qrcode"), "http://jindo.dev.naver.com/collie");
+    </script>
     <script src="votepage_script.js"></script>
+    <img src="groupname.png" alt="company logo" class="bottom-image">
 </body>
 </html>
