@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Poll Creator</title>
+    <link rel="stylesheet" href="QCstyles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.49.1/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+    
+    <img src="votepost3.png" alt="group logo" class="poll-title-image">
+    <form id="pollForm">
+        <label for="pollPremise">Question:</label>
+        <input type="text" id="pollPremise" required><br><br>
+
+        <div id="optionsContainer">
+            <div class="option">
+                <label for="optionA">A -</label>
+                <input type="text" id="optionA" name="options[]" required>
+                <button type="button" class="remove-btn">❌</button>
+            </div>
+            <div class="option">
+                <label for="optionB">B -</label>
+                <input type="text" id="optionB" name="options[]" required>
+                <button type="button" class="remove-btn">❌</button>
+            </div>
+        </div>
+
+        <button type="button" id="addOption">+</button><br><br>
+        <button type="submit">Create Poll</button>
+    </form>
+
+    <img src="groupname.png" alt="Bottom Logo" class="bottom-logo">
+
+    <script src="pollcreation.js"></script>
+</body>
+</html>
