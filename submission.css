@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(118, 67, 151);
+    color: white;
+    font-family: Georgia;
+    text-align: center;
+    padding: 20px;
+}
+
+.submitted-image {
+    width: 500px;  /* Adjust the size as needed */
+    height: auto;  /* Keeps the image proportionate */
+    display: block;  /* Allows margin auto to work */
+    margin: 40px auto;  /* Centers the image horizontally */
+}
+.header-image {
+    width: 500px;  /* Adjust the size as needed */
+    height: auto;  /* Keeps the image proportionate */
+    display: block;  /* Allows margin auto to work */
+    margin: 40px auto;  /* Centers the image horizontally */
+}
+.bottom-image {
+    width: 500px;  /* Adjust the size as needed */
+    height: auto;  /* Keeps the image proportionate */
+    display: block;  /* Allows margin auto to work */
+    margin: 40px auto;  /* Centers the image horizontally */
+}
