@@ -13,10 +13,10 @@ body {
 .container {
     width: 350px; /*box size*/
     padding: 20px;
-    background-color: rgba(118, 67, 151, 0.8); /* Slightly less opaque */
+    background-color: rgba(118, 67, 151, 1); /* Slightly less opaque */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(95, 60, 120);
+    /* box-shadow: 0px 0px 10px rgb(95, 60, 120); */
     text-align: center;
     margin: auto; /*centers*/
 }
@@ -125,7 +125,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%; /* Makes the button match input width */
+    /* width: 100%; Makes the button match input width */
 }
 
 button:hover {

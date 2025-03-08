@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const optionsContainer = document.querySelector(".options");
         optionsContainer.innerHTML = ""; // Clear previous options
 
-        for (let i = 1; i <= 6; i++) {
+        for (let i = 1; i <= 4; i++) {
             const optionKey = `option${i}`;
             if (data[optionKey]) {
                 const label = document.createElement("label");
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-submit_btn.addEventListener('click', function() {
+submit_btn.addEventListener('click', async function() {
     const radioButtons = document.querySelectorAll('input[name="option"]');
     
     radioButtons.forEach(radioButton => {
@@ -60,7 +60,6 @@ submit_btn.addEventListener('click', function() {
             vote(choice);
         }
     });
-    window.location.href = `end_results.html?pollId=${pollId}`;
 });
 
 async function vote(optionId) {
@@ -88,6 +87,7 @@ async function vote(optionId) {
     if (updateError) {
         console.error('Error voting:', error);
     } else {
-        console.log('Vote registered:', data);
+        // alert('Vote registered:', data);
+        window.location.href = `end_results.html?pollId=${pollId}`;
     }
 }

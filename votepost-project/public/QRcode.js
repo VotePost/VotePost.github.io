@@ -1,12 +1,16 @@
 // Extract the pollId from URL parameters
 const urlParams = new URLSearchParams(window.location.search);
 const pollId = urlParams.get('pollId');
+const numbers = document.getElementById('code');
 const code = document.getElementById('qrcode');
 const testButton = document.getElementById('testButton');
-// const end_btn = document.getElementById("end");
+const end_btn = document.getElementById("end");
 
 // Generate QR code when the page loads
 document.addEventListener('DOMContentLoaded', function() {
+    const abbrv = pollId.slice(-6);
+    numbers.innerHTML = abbrv;
+
     if (pollId) {
         generateQRCode(pollId);
     } else {
@@ -14,18 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-// end_btn.addEventListener('click', function() {
-//     const end = true;
-//     window.location.href = `end_results.html?pollId=${pollId}&end=true`;
-// });
-
 testButton.addEventListener('click', function() {
     window.location.href = `votepage.html?pollId=${pollId}`;
 })
 
+end_btn.addEventListener('click', function() {
+    window.location.href = `end_results.html?pollId=${pollId}&end=True`;
+})
+
 function generateQRCode(pollId) {
-    alert('Generating QR code');
-    const url = `https://jmjones03.github.io/votepage.html?pollId=${pollId}`;
+    const url = `https://VotePost.github.io/votepage.html?pollId=${pollId}`;
     
     // Clear any existing content
     document.getElementById("qrcode").innerHTML = '';

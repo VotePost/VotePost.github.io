@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addOptionButton = document.getElementById('addOption');
     const optionsContainer = document.getElementById('optionsContainer');
     
-    const maxOptions = 6;
+    const maxOptions = 4;
     const pollForm = document.getElementById('pollForm');
 
     let optionCounter = 2;
